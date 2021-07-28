@@ -30,6 +30,18 @@ const Shape ShapesArray[7]= {
 	{(char *[]){(char []){1,1},(char []){1,1}}, 2},     											//SQ_shape
 	{(char *[]){(char []){0,0,0,0}, (char []){1,1,1,1}, (char []){0,0,0,0}, (char []){0,0,0,0}}, 4} //R_shape
 };
+// 
+const char array1[3][3] = {{0,1,1},{1,1,0},{0,0,0}};
+const char array2[3][3] = {{1,1,0},{0,1,1},{0,0,0}};
+const char array3[3][3] = {{0,1,0},{1,1,1},{0,0,0}};
+const char array4[3][3] = {{0,0,1},{1,1,1},{0,0,0}};
+const char array5[3][3] = {{1,0,0},{1,1,1},{0,0,0}}; 
+const char array6[2][2] = {{1,1}, {1,1}}; 
+const char array7[4][4] = {{0,0,0,0}, {1,1,1,1}, {0,0,0,0}, {0,0,0,0}};
+
+const Shape ShapesArray[7] = {
+    {array1, 3, 0 ,0},  {array2, 3, 0, 0}, {array3, 3, 0, 0}, {array4, 3, 0, 0}, {array5, 3, 0, 0},
+	{array6, 2, 0, 0}, {array7, 4, 0, 0}} 
 
 Shape CopyShape(Shape shape){
 	Shape new_shape = shape;
